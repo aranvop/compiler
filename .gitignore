@@ -1,0 +1,12 @@
+*.zip
+*.pdf
+*.docx
+*.doc
+*/answer
+*/build
+*/testcase
+*/CMakeCache.txt
+*/Makefile
+*/test.sh
+*/cmake_install.cmake
+*/compiler
