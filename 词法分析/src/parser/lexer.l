@@ -32,7 +32,7 @@ void print_msg(std::ostream &out) {
     out << std::setw(10) << current_token
         << std::setw(10) << yytext
         << std::setw(10) << line_number
-        << std::setw(10) << "("  << column_start_number+1 << "," << column_end_number+1 << ")" 
+        << std::setw(10) << "("  << column_start_number << "," << column_end_number << ")" 
         << std::endl;
     
 }
@@ -98,8 +98,8 @@ return { return handle_token(RETURN);}
 "const" {return handle_token(IntConst);}
 \n {
     line_number++;
-    column_start_number=0;
-    column_end_number=0;
+    column_start_number=1;
+    column_end_number=1;
 }
 
 " "|\r {
