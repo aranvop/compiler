@@ -95,7 +95,6 @@ return { return handle_token(RETURN);}
 "=" {return handle_token(ASSIGN);}
 ">" {return handle_token(GREATER);}
 "<" {return handle_token(LESS);}
-"const" {return handle_token(IntConst);}
 \n {
     line_number++;
     column_start_number=1;
